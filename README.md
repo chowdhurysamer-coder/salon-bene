@@ -3,6 +3,9 @@
 A hand-built site for **Salon Bené Inc.**, the family-owned hair salon in
 Clock Tower Plaza, Melville, NY (1 Schwab Rd #4 · 631-673-5151).
 
+**Live site:** <https://chowdhurysamer-coder.github.io/salon-bene/>
+(auto-deployed by `.github/workflows/pages.yml` on every push to the branch)
+
 ## Design
 
 The look is drawn directly from the salon's storefront signage: a lacquer-black
