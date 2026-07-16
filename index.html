@@ -4,17 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Salon Bené — Hair Salon in Melville, NY | Clock Tower Plaza</title>
-  <meta name="description" content="Salon Bené is an intimate, family-owned hair salon in Melville, New York. Precision cuts, dimensional color and unhurried service from Janet &amp; Bill — for decades a Clock Tower Plaza tradition. Call (631) 673-5151.">
+  <meta name="description" content="Salon Bené is an intimate, family-owned hair salon in Melville, New York. Precision cuts, dimensional color and unhurried service — for decades a Clock Tower Plaza tradition. Call (631) 673-5151.">
   <meta property="og:title" content="Salon Bené — Melville, NY">
-  <meta property="og:description" content="Beautiful hair, done well. An intimate salon in Clock Tower Plaza, Melville.">
+  <meta property="og:description" content="Beautiful hair, done well. An intimate salon in Clock Tower Plaza, Melville. Call (631) 673-5151.">
   <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0e0e10">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Salon Bené Inc",
+    "telephone": "+1-631-673-5151",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1 Schwab Rd #4",
+      "addressLocality": "Melville",
+      "addressRegion": "NY",
+      "postalCode": "11747",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "10:00",
+      "closes": "17:30"
+    }],
+    "priceRange": "$$"
+  }
+  </script>
 </head>
 <body>
+
+  <a class="skip-link" href="#about">Skip to content</a>
 
   <!-- ═══════════════ Loader ═══════════════ -->
   <div class="loader" id="loader" aria-hidden="true">
@@ -29,9 +55,9 @@
       <ul class="nav__links" id="navLinks">
         <li><a href="#about" class="nav__link">The Salon</a></li>
         <li><a href="#services" class="nav__link">Services</a></li>
-        <li><a href="#gallery" class="nav__link">Gallery</a></li>
+        <li><a href="#experience" class="nav__link">Your Visit</a></li>
         <li><a href="#reviews" class="nav__link">Kind Words</a></li>
-        <li><a href="#visit" class="nav__link">Visit</a></li>
+        <li><a href="#visit" class="nav__link">Find Us</a></li>
       </ul>
       <a href="tel:+16316735151" class="nav__cta">
         <span class="nav__cta-label">Book by phone</span>
@@ -47,12 +73,50 @@
 
     <!-- ═══════════════ Hero ═══════════════ -->
     <section class="hero">
-      <div class="hero__media" id="heroMedia">
-        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015251_74ee08c5-da57-4816-9b0b-f02afca365c2.png" alt="The warmly lit interior of Salon Bené" class="hero__img">
+      <div class="hero__media" id="heroMedia" aria-hidden="true">
+        <!-- Silk-strand artwork: layered flowing curves, drawn once, drifting slowly -->
+        <svg class="hero__art" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <defs>
+            <linearGradient id="strandSilver" x1="0" y1="0" x2="1" y2="0.3">
+              <stop offset="0" stop-color="#b9bac2" stop-opacity="0"/>
+              <stop offset="0.5" stop-color="#b9bac2" stop-opacity="0.55"/>
+              <stop offset="1" stop-color="#b9bac2" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="strandGold" x1="0" y1="0" x2="1" y2="0.2">
+              <stop offset="0" stop-color="#c8a468" stop-opacity="0"/>
+              <stop offset="0.5" stop-color="#c8a468" stop-opacity="0.5"/>
+              <stop offset="1" stop-color="#c8a468" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="glow" cx="0.5" cy="0.42" r="0.65">
+              <stop offset="0" stop-color="#c8a468" stop-opacity="0.14"/>
+              <stop offset="0.55" stop-color="#c8a468" stop-opacity="0.045"/>
+              <stop offset="1" stop-color="#c8a468" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="1440" height="900" fill="#0e0e10"/>
+          <rect width="1440" height="900" fill="url(#glow)"/>
+          <g class="strands strands--a" stroke="url(#strandSilver)" fill="none" stroke-width="1.1">
+            <path d="M-100,660 C 300,540 620,760 940,620 S 1480,480 1640,560"/>
+            <path d="M-100,690 C 310,565 630,790 950,650 S 1490,505 1650,585"/>
+            <path d="M-100,722 C 320,595 640,822 960,682 S 1500,532 1660,612"/>
+            <path d="M-100,756 C 330,628 650,856 970,716 S 1510,562 1670,642"/>
+            <path d="M-100,792 C 340,662 660,892 980,752 S 1520,595 1680,675"/>
+          </g>
+          <g class="strands strands--b" stroke="url(#strandGold)" fill="none" stroke-width="1">
+            <path d="M-120,240 C 260,360 640,150 1020,280 S 1500,340 1660,270"/>
+            <path d="M-120,270 C 270,388 650,175 1030,305 S 1510,368 1670,298"/>
+            <path d="M-120,302 C 280,418 660,202 1040,332 S 1520,398 1680,328"/>
+            <path d="M-120,336 C 290,450 670,232 1050,362 S 1530,430 1690,360"/>
+          </g>
+          <g class="strands strands--c" stroke="url(#strandSilver)" fill="none" stroke-width="0.8" opacity="0.6">
+            <path d="M-100,480 C 400,420 800,540 1200,450 S 1560,420 1680,460"/>
+            <path d="M-100,505 C 410,442 810,565 1210,475 S 1570,445 1690,485"/>
+          </g>
+        </svg>
         <div class="hero__veil"></div>
       </div>
       <div class="hero__content container">
-        <p class="hero__eyebrow reveal">Melville, New York &nbsp;·&nbsp; Est. in Clock Tower Plaza</p>
+        <p class="hero__eyebrow reveal">Melville, New York &nbsp;·&nbsp; Clock Tower Plaza</p>
         <div class="hero__sign reveal" role="img" aria-label="Salon Bené — 631-673-5151 · 631-673-4985">
           <h1 class="hero__script">Salon Bené</h1>
           <p class="hero__sign-phones">631&#8202;-&#8202;673&#8202;-&#8202;5151 &nbsp;•&nbsp; 631&#8202;-&#8202;673&#8202;-&#8202;4985</p>
@@ -83,31 +147,65 @@
           <p class="eyebrow reveal">The Salon</p>
           <h2 class="heading-xl reveal">An institution,<br><em>not a franchise.</em></h2>
           <div class="about__copy reveal">
-            <p>Tucked beneath the rotunda of Clock Tower Plaza, Salon Bené has been quietly perfecting hair for decades. No conveyor belt of clients, no stranger with your file — just Janet behind the chair, Bill at the desk, and the kind of attention that only an owner-run salon can give.</p>
+            <p>Tucked into Clock Tower Plaza, Salon Bené has been quietly perfecting hair for decades. No conveyor belt of clients, no stranger with your file — just Janet behind the chair, Bill at the desk, and the kind of attention only an owner-run salon can give.</p>
             <p>Janet is, in her clients’ words, <em>an artist</em> — a stylist who reads what your hair wants to do and makes it do it better. Bill keeps the coffee excellent, the music restful and the welcome warm. Come once and you’re a client; come twice and you’re family.</p>
           </div>
           <ul class="about__marks reveal">
             <li>
-              <span class="about__mark-num" data-count="30">30</span><span class="about__mark-plus">+</span>
-              <span class="about__mark-label">Years of craft</span>
+              <span class="about__mark-num">Decades</span>
+              <span class="about__mark-label">of craft in one chair</span>
             </li>
             <li>
-              <span class="about__mark-num about__mark-num--static">One</span>
-              <span class="about__mark-label">Chair that matters — yours</span>
+              <span class="about__mark-num">Two</span>
+              <span class="about__mark-label">Owners who know your name</span>
             </li>
             <li>
-              <span class="about__mark-num" data-count="4.5">4.5</span><span class="about__mark-plus">★</span>
+              <span class="about__mark-num">4.5<span class="about__mark-plus">★</span></span>
               <span class="about__mark-label">Google rating</span>
             </li>
           </ul>
         </div>
         <div class="about__media reveal">
-          <figure class="about__frame">
-            <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015310_68657669-a7bb-4c61-97e2-23d6e6a73fc3_min.webp" alt="Candelabra and stylist's shears on the counter at Salon Bené" loading="lazy">
-          </figure>
-          <figure class="about__frame about__frame--offset">
-            <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015253_c31604cb-25b9-4c6e-bf12-fa10d49a526e_min.webp" alt="Janet's hands mid-cut, scissors and comb through glossy hair" loading="lazy">
-          </figure>
+          <!-- Art-deco crest: the storefront oval, engraved -->
+          <div class="crest" aria-hidden="true">
+            <svg class="crest__art" viewBox="0 0 420 520" fill="none" focusable="false">
+              <defs>
+                <linearGradient id="crestStroke" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#b9bac2" stop-opacity="0.9"/>
+                  <stop offset="1" stop-color="#c8a468" stop-opacity="0.8"/>
+                </linearGradient>
+              </defs>
+              <!-- sunburst -->
+              <g class="crest__rays" stroke="#b9bac2" stroke-opacity="0.22">
+                <path d="M210 40 V 96"/><path d="M210 424 V 480"/>
+                <path d="M40 260 H 96"/><path d="M324 260 H 380"/>
+                <path d="M90 110 l 38 38"/><path d="M292 372 l 38 38"/>
+                <path d="M330 110 l -38 38"/><path d="M128 372 l -38 38"/>
+                <path d="M60 180 l 50 22"/><path d="M310 318 l 50 22"/>
+                <path d="M360 180 l -50 22"/><path d="M110 318 l -50 22"/>
+                <path d="M60 340 l 50 -22"/><path d="M310 202 l 50 -22"/>
+                <path d="M360 340 l -50 -22"/><path d="M110 202 l -50 -22"/>
+              </g>
+              <!-- the sign oval -->
+              <rect x="70" y="196" width="280" height="128" rx="64" stroke="url(#crestStroke)" stroke-width="1.6"/>
+              <rect x="78" y="204" width="264" height="112" rx="56" stroke="#b9bac2" stroke-opacity="0.35"/>
+              <!-- flourishes -->
+              <path class="crest__flourish" d="M120 150 C 170 122, 250 122, 300 150" stroke="#c8a468" stroke-opacity="0.6"/>
+              <path class="crest__flourish" d="M120 370 C 170 398, 250 398, 300 370" stroke="#c8a468" stroke-opacity="0.6"/>
+              <circle cx="210" cy="140" r="2.2" fill="#c8a468"/>
+              <circle cx="210" cy="380" r="2.2" fill="#c8a468"/>
+            </svg>
+            <span class="crest__script">Salon Bené</span>
+            <span class="crest__sub">Clock Tower Plaza · Melville</span>
+          </div>
+          <!-- Janet & Bill card -->
+          <div class="duo">
+            <span class="duo__script" aria-hidden="true">J&thinsp;&amp;&thinsp;B</span>
+            <h3 class="duo__names">Janet &amp; Bill</h3>
+            <p class="duo__roles">The artist behind the chair<br>&amp; the welcome at the desk</p>
+            <span class="duo__rule" aria-hidden="true"></span>
+            <p class="duo__note">“They make you feel like you’re their only client.”</p>
+          </div>
         </div>
       </div>
     </section>
@@ -131,7 +229,7 @@
           <p class="services__note reveal">Every visit begins with a real conversation — about your hair, your routine, and what you actually want to see in the mirror. Pricing is quoted honestly at consultation.</p>
         </div>
         <div class="services__list">
-          <article class="service reveal" data-img="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015253_c31604cb-25b9-4c6e-bf12-fa10d49a526e_min.webp">
+          <article class="service reveal" data-motif="cut">
             <span class="service__index">01</span>
             <div class="service__body">
               <h3 class="service__name">Cuts &amp; Precision Styling</h3>
@@ -139,7 +237,7 @@
             </div>
             <span class="service__arrow" aria-hidden="true">→</span>
           </article>
-          <article class="service reveal" data-img="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015255_0fcfcff7-a7cb-418b-882f-8491ac15eebf_min.webp">
+          <article class="service reveal" data-motif="color">
             <span class="service__index">02</span>
             <div class="service__body">
               <h3 class="service__name">Color, Balayage &amp; Dimension</h3>
@@ -147,7 +245,7 @@
             </div>
             <span class="service__arrow" aria-hidden="true">→</span>
           </article>
-          <article class="service reveal" data-img="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015309_82916be5-cb21-46d6-992d-8c0c694321e7_min.webp">
+          <article class="service reveal" data-motif="wash">
             <span class="service__index">03</span>
             <div class="service__body">
               <h3 class="service__name">The Wash &amp; Blowout Ritual</h3>
@@ -155,7 +253,7 @@
             </div>
             <span class="service__arrow" aria-hidden="true">→</span>
           </article>
-          <article class="service reveal" data-img="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015305_09b79bec-07ca-4cfa-a492-4aa21b11026c_min.webp">
+          <article class="service reveal" data-motif="groom">
             <span class="service__index">04</span>
             <div class="service__body">
               <h3 class="service__name">Men’s Grooming</h3>
@@ -163,7 +261,7 @@
             </div>
             <span class="service__arrow" aria-hidden="true">→</span>
           </article>
-          <article class="service reveal" data-img="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015251_74ee08c5-da57-4816-9b0b-f02afca365c2_min.webp">
+          <article class="service reveal" data-motif="occasion">
             <span class="service__index">05</span>
             <div class="service__body">
               <h3 class="service__name">Occasions &amp; Updos</h3>
@@ -172,43 +270,81 @@
             <span class="service__arrow" aria-hidden="true">→</span>
           </article>
         </div>
+
+        <!-- floating monogram card that follows the cursor over the list -->
         <div class="service-peek" id="servicePeek" aria-hidden="true">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015253_c31604cb-25b9-4c6e-bf12-fa10d49a526e_min.webp" alt="" id="servicePeekImg">
+          <svg class="service-peek__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" focusable="false">
+            <g data-icon="cut">
+              <circle cx="20" cy="44" r="7"/><circle cx="20" cy="20" r="7"/>
+              <path d="M26 25 L 52 47 M26 39 L 52 17"/>
+            </g>
+            <g data-icon="color" hidden>
+              <path d="M32 10 C 32 10, 18 28, 18 38 a 14 14 0 0 0 28 0 C 46 28, 32 10, 32 10 Z"/>
+              <path d="M26 40 a 6 6 0 0 0 6 6"/>
+            </g>
+            <g data-icon="wash" hidden>
+              <path d="M12 40 q 5 -5 10 0 t 10 0 t 10 0 t 10 0"/>
+              <path d="M12 50 q 5 -5 10 0 t 10 0 t 10 0 t 10 0"/>
+              <circle cx="24" cy="22" r="2.4"/><circle cx="34" cy="15" r="3.2"/><circle cx="44" cy="24" r="2"/>
+            </g>
+            <g data-icon="groom" hidden>
+              <path d="M18 14 v 36 M18 18 h 26 a 4 4 0 0 1 4 4 v 2"/>
+              <path d="M26 18 v 8 M33 18 v 8 M40 18 v 8"/>
+            </g>
+            <g data-icon="occasion" hidden>
+              <path d="M24 12 C 14 24, 14 40, 26 50 M40 12 C 50 24, 50 40, 38 50"/>
+              <path d="M32 18 l 1.8 4 4.2 0.5 -3 3 0.8 4.3 -3.8 -2 -3.8 2 0.8 -4.3 -3 -3 4.2 -0.5 Z"/>
+            </g>
+          </svg>
+          <span class="service-peek__label" id="servicePeekLabel">Cuts</span>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════ Gallery ═══════════════ -->
-    <section class="gallery section" id="gallery">
-      <div class="container gallery__head">
-        <p class="eyebrow reveal">The Work</p>
-        <h2 class="heading-xl reveal">Quiet luxury,<br><em>loud results.</em></h2>
-      </div>
-      <div class="gallery__grid container">
-        <figure class="gallery__item gallery__item--tall reveal">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015255_0fcfcff7-a7cb-418b-882f-8491ac15eebf_min.webp" alt="Glossy caramel balayage waves" loading="lazy">
-          <figcaption>Hand-painted dimension</figcaption>
-        </figure>
-        <figure class="gallery__item reveal">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015251_74ee08c5-da57-4816-9b0b-f02afca365c2_min.webp" alt="Salon Bené's candle-lit interior" loading="lazy">
-          <figcaption>The room</figcaption>
-        </figure>
-        <figure class="gallery__item reveal">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015309_82916be5-cb21-46d6-992d-8c0c694321e7_min.webp" alt="The unhurried wash ritual" loading="lazy">
-          <figcaption>The ritual</figcaption>
-        </figure>
-        <figure class="gallery__item gallery__item--tall reveal">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015305_09b79bec-07ca-4cfa-a492-4aa21b11026c_min.webp" alt="A precision men's cut in progress" loading="lazy">
-          <figcaption>Precision grooming</figcaption>
-        </figure>
-        <figure class="gallery__item reveal">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015253_c31604cb-25b9-4c6e-bf12-fa10d49a526e_min.webp" alt="Scissors and comb mid-cut" loading="lazy">
-          <figcaption>The craft</figcaption>
-        </figure>
-        <figure class="gallery__item reveal">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GYBS62dxIIG18Q4M3dG53faoa7/hf_20260716_015310_68657669-a7bb-4c61-97e2-23d6e6a73fc3_min.webp" alt="Candelabra detail in the salon window" loading="lazy">
-          <figcaption>The details</figcaption>
-        </figure>
+    <!-- ═══════════════ Your Visit ═══════════════ -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <p class="eyebrow eyebrow--center reveal">Your Visit</p>
+        <h2 class="heading-xl heading--center reveal">An hour that feels<br><em>like a favor to yourself.</em></h2>
+        <ol class="steps">
+          <li class="step reveal">
+            <svg class="step__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" focusable="false">
+              <path d="M14 44 a 18 14 0 1 1 8 6 L 12 54 Z"/>
+              <path d="M24 30 h 16 M24 37 h 10"/>
+            </svg>
+            <span class="step__num">I</span>
+            <h3 class="step__name">The Conversation</h3>
+            <p class="step__desc">Coffee’s on. We talk about your hair, your mornings, and what “better” looks like to you — before a single snip.</p>
+          </li>
+          <li class="step reveal">
+            <svg class="step__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" focusable="false">
+              <path d="M12 42 q 5 -5 10 0 t 10 0 t 10 0 t 10 0"/>
+              <path d="M12 51 q 5 -5 10 0 t 10 0 t 10 0 t 10 0"/>
+              <circle cx="26" cy="20" r="2.6"/><circle cx="37" cy="14" r="3.4"/><circle cx="46" cy="23" r="2.2"/>
+            </svg>
+            <span class="step__num">II</span>
+            <h3 class="step__name">The Wash</h3>
+            <p class="step__desc">An unhurried shampoo and scalp massage that clients call the best part — until they see the mirror.</p>
+          </li>
+          <li class="step reveal">
+            <svg class="step__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" focusable="false">
+              <circle cx="20" cy="44" r="7"/><circle cx="20" cy="20" r="7"/>
+              <path d="M26 25 L 52 47 M26 39 L 52 17"/>
+            </svg>
+            <span class="step__num">III</span>
+            <h3 class="step__name">The Craft</h3>
+            <p class="step__desc">Janet reads what your hair wants to do and shapes it with decades of hands-on precision. No rushing, ever.</p>
+          </li>
+          <li class="step reveal">
+            <svg class="step__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" focusable="false">
+              <rect x="16" y="12" width="32" height="40" rx="16"/>
+              <path d="M32 20 l 2 4.5 5 0.6 -3.6 3.5 0.9 5 -4.3 -2.4 -4.3 2.4 0.9 -5 -3.6 -3.5 5 -0.6 Z"/>
+            </svg>
+            <span class="step__num">IV</span>
+            <h3 class="step__name">The Reveal</h3>
+            <p class="step__desc">You leave looking like yourself on your best day — with honest advice for keeping it that way at home.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -244,7 +380,7 @@
             <cite class="review__cite">Dawn F. · Yelp</cite>
           </blockquote>
         </div>
-        <div class="reviews__nav reveal" role="tablist" aria-label="Reviews">
+        <div class="reviews__nav reveal" aria-label="Reviews">
           <button class="reviews__dot is-active" aria-label="Review 1"></button>
           <button class="reviews__dot" aria-label="Review 2"></button>
           <button class="reviews__dot" aria-label="Review 3"></button>
@@ -258,7 +394,7 @@
     <section class="visit section" id="visit">
       <div class="container visit__grid">
         <div class="visit__info">
-          <p class="eyebrow reveal">Visit</p>
+          <p class="eyebrow reveal">Find Us</p>
           <h2 class="heading-xl reveal">The chair is waiting.<br><em>Call ahead.</em></h2>
           <p class="visit__copy reveal">We book by phone — the old-fashioned way, because a two-minute conversation beats a form. Tell us what you’re after and we’ll make the time.</p>
 
@@ -269,7 +405,7 @@
           </div>
 
           <div class="visit__block reveal">
-            <h3 class="visit__label">Find us</h3>
+            <h3 class="visit__label">Address</h3>
             <address class="visit__address">
               Clock Tower Plaza<br>
               1 Schwab Rd #4<br>
@@ -282,16 +418,24 @@
         <div class="visit__hours reveal">
           <h3 class="visit__hours-title">Salon Hours</h3>
           <dl class="hours">
-            <div class="hours__row hours__row--closed"><dt>Monday</dt><dd>Closed</dd></div>
-            <div class="hours__row hours__row--closed"><dt>Tuesday</dt><dd>Closed</dd></div>
-            <div class="hours__row"><dt>Wednesday</dt><dd>10:00 – 5:30</dd></div>
-            <div class="hours__row"><dt>Thursday</dt><dd>10:00 – 5:30</dd></div>
-            <div class="hours__row"><dt>Friday</dt><dd>10:00 – 5:30</dd></div>
-            <div class="hours__row"><dt>Saturday</dt><dd>10:00 – 5:30</dd></div>
-            <div class="hours__row hours__row--closed"><dt>Sunday</dt><dd>Closed</dd></div>
+            <div class="hours__row hours__row--closed" data-day="1"><dt>Monday</dt><dd>Closed</dd></div>
+            <div class="hours__row hours__row--closed" data-day="2"><dt>Tuesday</dt><dd>Closed</dd></div>
+            <div class="hours__row" data-day="3"><dt>Wednesday</dt><dd>10:00 – 5:30</dd></div>
+            <div class="hours__row" data-day="4"><dt>Thursday</dt><dd>10:00 – 5:30</dd></div>
+            <div class="hours__row" data-day="5"><dt>Friday</dt><dd>10:00 – 5:30</dd></div>
+            <div class="hours__row" data-day="6"><dt>Saturday</dt><dd>10:00 – 5:30</dd></div>
+            <div class="hours__row hours__row--closed" data-day="0"><dt>Sunday</dt><dd>Closed</dd></div>
           </dl>
           <p class="visit__hours-note" id="openNow"></p>
         </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ Call band ═══════════════ -->
+    <section class="callband section--tight">
+      <div class="container callband__inner reveal">
+        <p class="callband__script">Ready when you are.</p>
+        <a href="tel:+16316735151" class="btn btn--solid">Call (631) 673-5151</a>
       </div>
     </section>
 
@@ -305,6 +449,7 @@
         <span class="footer__phones">631&#8202;-&#8202;673&#8202;-&#8202;5151 &nbsp;•&nbsp; 631&#8202;-&#8202;673&#8202;-&#8202;4985</span>
       </div>
       <p class="footer__line">Clock Tower Plaza · 1 Schwab Rd #4 · Melville, NY 11747</p>
+      <p class="footer__hours-line">Wednesday – Saturday, 10:00 AM – 5:30 PM</p>
       <p class="footer__fine">© <span id="year"></span> Salon Bené Inc. All rights reserved.</p>
     </div>
   </footer>

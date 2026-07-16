@@ -63,50 +63,59 @@
       requestAnimationFrame(function () {
         var y = window.scrollY;
         if (y < window.innerHeight * 1.2) {
-          heroMedia.style.transform = "translateY(" + y * 0.28 + "px)";
+          heroMedia.style.transform = "translateY(" + y * 0.24 + "px)";
         }
         ticking = false;
       });
     }, { passive: true });
   }
 
-  /* ── Service list: floating image peek ──────────────── */
+  /* ── Service list: floating engraved card ───────────── */
   var peek = document.getElementById("servicePeek");
-  var peekImg = document.getElementById("servicePeekImg");
+  var peekLabel = document.getElementById("servicePeekLabel");
   var services = document.querySelectorAll(".service");
   var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
   if (peek && fine && !reduceMotion) {
+    var icons = peek.querySelectorAll("[data-icon]");
+    var labels = {
+      cut: "The Cut",
+      color: "The Color",
+      wash: "The Ritual",
+      groom: "The Groom",
+      occasion: "The Occasion"
+    };
     var px = 0, py = 0, cx = 0, cy = 0, raf = null;
     var glide = function () {
-      cx += (px - cx) * 0.12;
-      cy += (py - cy) * 0.12;
-      peek.style.transform = "translate(" + cx + "px," + cy + "px)";
+      cx += (px - cx) * 0.13;
+      cy += (py - cy) * 0.13;
+      peek.style.transform = "translate(" + cx + "px," + cy + "px) rotate(" + (px - cx) * 0.04 + "deg)";
       raf = requestAnimationFrame(glide);
     };
     services.forEach(function (card) {
       card.addEventListener("mouseenter", function () {
-        var src = card.getAttribute("data-img");
-        if (src && peekImg.getAttribute("src") !== src) peekImg.setAttribute("src", src);
+        var motif = card.getAttribute("data-motif");
+        icons.forEach(function (g) {
+          g.toggleAttribute("hidden", g.getAttribute("data-icon") !== motif);
+        });
+        if (labels[motif]) peekLabel.textContent = labels[motif];
         peek.classList.add("is-on");
         if (!raf) raf = requestAnimationFrame(glide);
       });
       card.addEventListener("mousemove", function (e) {
-        px = Math.min(e.clientX + 36, window.innerWidth - 260);
-        py = Math.min(e.clientY - 140, window.innerHeight - 320);
+        px = Math.min(e.clientX + 36, window.innerWidth - 220);
+        py = Math.min(Math.max(e.clientY - 120, 12), window.innerHeight - 280);
       });
       card.addEventListener("mouseleave", function () {
         peek.classList.remove("is-on");
       });
     });
-    // stop the loop when nothing is shown for a while
+    // stop the glide loop when the card has been hidden for a while
     setInterval(function () {
       if (!peek.classList.contains("is-on") && raf) {
         cancelAnimationFrame(raf);
         raf = null;
       }
     }, 2000);
-    peek.style.top = "0";
-    peek.style.left = "0";
   }
 
   /* ── Reviews carousel ───────────────────────────────── */
@@ -134,16 +143,18 @@
   });
   if (reviews.length && !reduceMotion) startRotation();
 
-  /* ── Hours: “open now” note ─────────────────────────── */
+  /* ── Hours: highlight today + “open now” note ───────── */
+  var now = new Date();
+  var day = now.getDay();
+  var todayRow = document.querySelector('.hours__row[data-day="' + day + '"]');
+  if (todayRow) todayRow.classList.add("is-today");
+
   var openNote = document.getElementById("openNow");
   if (openNote) {
-    // Open Wed(3)–Sat(6), 10:00–17:30, local salon time
-    var now = new Date();
-    var day = now.getDay();
+    // Open Wed(3)–Sat(6), 10:00–17:30, visitor's local time
     var mins = now.getHours() * 60 + now.getMinutes();
     var isOpenDay = day >= 3 && day <= 6;
-    var isOpenNow = isOpenDay && mins >= 600 && mins < 1050;
-    if (isOpenNow) {
+    if (isOpenDay && mins >= 600 && mins < 1050) {
       openNote.textContent = "We’re in the salon right now — call ahead and come by.";
     } else if (isOpenDay && mins < 600) {
       openNote.textContent = "Doors open at 10 this morning.";

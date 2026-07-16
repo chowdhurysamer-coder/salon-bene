@@ -14,24 +14,17 @@ throughout — lacquer black (`#0e0e10`), aged ivory (`#f3efe7`), brushed silver
 - **Cormorant Garamond** for editorial headings
 - **Jost** for body text and letterspaced UI labels
 
-Interactions are all dependency-free vanilla JS: a script-logo entry loader,
-scroll-reveal choreography, hero parallax, a cursor-following image peek on the
-services list, an auto-rotating review carousel, a services marquee, and an
-"open now" note computed from the salon's real hours. Reduced-motion
-preferences are respected throughout.
+All artwork is original, hand-drawn inline SVG — drifting silk-strand line art
+in the hero, an engraved art-deco crest of the storefront oval, and a set of
+stroke-drawn service icons. No stock photos and no imagery pretending to be
+the real interior.
 
-## Photography
-
-All photography was generated with **Higgsfield** (Soul v2) to match the
-salon's moody, candle-lit elegance, and is served from Higgsfield's CDN.
-To self-host the images instead, run:
-
-```sh
-./scripts/localize-images.sh
-```
-
-from the repo root on a machine with normal internet access. It downloads each
-image into `assets/img/` and rewrites `index.html` to the local paths.
+Interactions are dependency-free vanilla JS: a script-logo entry loader,
+scroll-reveal choreography, hero parallax, a cursor-following engraved card on
+the services list, an auto-rotating review carousel (real Yelp/Google quotes),
+a services marquee, and an hours table that highlights today and shows a live
+"open now" note. Reduced-motion preferences are respected throughout, and the
+page ships LocalBusiness JSON-LD for search.
 
 ## Running
 
