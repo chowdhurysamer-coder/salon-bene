@@ -80,7 +80,7 @@
     var labels = {
       cut: "The Cut",
       color: "The Color",
-      wash: "The Ritual",
+      wash: "The Blowout",
       groom: "The Groom",
       occasion: "The Occasion"
     };
@@ -155,7 +155,7 @@
     var mins = now.getHours() * 60 + now.getMinutes();
     var isOpenDay = day >= 3 && day <= 6;
     if (isOpenDay && mins >= 600 && mins < 1050) {
-      openNote.textContent = "We’re in the salon right now — call ahead and come by.";
+      openNote.textContent = "We’re in the salon right now. Call ahead and come by.";
     } else if (isOpenDay && mins < 600) {
       openNote.textContent = "Doors open at 10 this morning.";
     } else {
